@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Inscreven" table="inscreven">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="civ" type="string" column="civ" nullable="true"/>
+    <field name="nom" type="string" column="nom" length="80" nullable="false"/>
+    <field name="prenom" type="string" column="prenom" length="80" nullable="false"/>
+    <field name="section" type="string" column="section" length="100" nullable="false"/>
+    <field name="tel" type="string" column="tel" length="10" nullable="false"/>
+    <field name="mail" type="string" column="mail" length="100" nullable="false"/>
+    <field name="ideven" type="integer" column="idEven" nullable="false"/>
+    <field name="ext" type="integer" column="ext" nullable="false"/>
+  </entity>
+</doctrine-mapping>

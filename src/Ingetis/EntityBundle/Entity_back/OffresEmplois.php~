@@ -1,0 +1,53 @@
+<?php
+
+namespace Ingetis\EntityBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * OffresEmplois
+ *
+ * @ORM\Table(name="offres_emplois")
+ * @ORM\Entity
+ */
+class OffresEmplois
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_offre", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idOffre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre_offre", type="string", length=250, nullable=false)
+     */
+    private $titreOffre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description_offre", type="text", nullable=false)
+     */
+    private $descriptionOffre;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="vues", type="integer", nullable=false)
+     */
+    private $vues;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="date", type="integer", nullable=false)
+     */
+    private $date;
+
+
+}

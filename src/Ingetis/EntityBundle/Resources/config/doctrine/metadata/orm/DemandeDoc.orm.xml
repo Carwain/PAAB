@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="DemandeDoc" table="demande_doc">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="civ" type="string" column="civ" nullable="false"/>
+    <field name="nom" type="string" column="nom" length="50" nullable="false"/>
+    <field name="prenom" type="string" column="prenom" length="50" nullable="false"/>
+    <field name="datenaissance" type="date" column="dateNaissance" nullable="false"/>
+    <field name="adr1" type="string" column="adr1" length="64" nullable="false"/>
+    <field name="adr2" type="string" column="adr2" length="64" nullable="false"/>
+    <field name="cp" type="string" column="cp" length="10" nullable="false"/>
+    <field name="ville" type="string" column="ville" length="64" nullable="false"/>
+    <field name="telfixe" type="string" column="telFixe" length="10" nullable="false"/>
+    <field name="telportable" type="string" column="telPortable" length="10" nullable="false"/>
+    <field name="email" type="string" column="email" length="128" nullable="false"/>
+    <field name="idniveau" type="smallint" column="IDNiveau" nullable="false"/>
+    <field name="niveauvalide" type="string" column="niveauValide" nullable="false"/>
+    <field name="idformation1" type="integer" column="IDFormation1" nullable="false"/>
+    <field name="tformation1" type="string" column="tFormation1" nullable="false"/>
+    <field name="aformation1" type="boolean" column="aFormation1" nullable="false"/>
+    <field name="idformation2" type="integer" column="IDFormation2" nullable="false"/>
+    <field name="tformation2" type="string" column="tFormation2" nullable="false"/>
+    <field name="aformation2" type="boolean" column="aFormation2" nullable="false"/>
+    <field name="etablissement" type="string" column="etablissement" length="255" nullable="false"/>
+  </entity>
+</doctrine-mapping>

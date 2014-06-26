@@ -1,0 +1,15 @@
+{% extends 'IngetisContentBundle::content.html.twig' %}
+
+{% block colright %}
+
+    <h3>Demande de Documentation</h3>
+    <form action="{{ path("ingetis_demande_doc_DDD") }}" method="post">
+        {{ form_widget (form) }}
+
+        <input type="submit">
+
+    </form>
+
+
+
+{% endblock %}

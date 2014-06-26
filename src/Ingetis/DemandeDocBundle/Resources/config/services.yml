@@ -1,0 +1,7 @@
+parameters:
+#    ingetis_demande_doc.example.class: Ingetis\DemandeDocBundle\Example
+
+services:
+#    ingetis_demande_doc.example:
+#        class: %ingetis_demande_doc.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

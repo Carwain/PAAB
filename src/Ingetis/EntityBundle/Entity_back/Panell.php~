@@ -1,0 +1,95 @@
+<?php
+
+namespace Ingetis\EntityBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Panell
+ *
+ * @ORM\Table(name="panell", indexes={@ORM\Index(name="event", columns={"event"})})
+ * @ORM\Entity
+ */
+class Panell
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_panell", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idPanell;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="event", type="integer", nullable=false)
+     */
+    private $event;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_section_panell", type="integer", nullable=false)
+     */
+    private $idSectionPanell;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_type_article", type="integer", nullable=false)
+     */
+    private $idTypeArticle;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre_panell", type="string", length=300, nullable=false)
+     */
+    private $titrePanell;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image_panell", type="string", length=300, nullable=false)
+     */
+    private $imagePanell;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="video_panell", type="string", length=250, nullable=false)
+     */
+    private $videoPanell;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="swf_panell", type="string", length=250, nullable=false)
+     */
+    private $swfPanell;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lien_panell", type="string", length=300, nullable=false)
+     */
+    private $lienPanell;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="desc_panell", type="text", nullable=false)
+     */
+    private $descPanell;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="delais_panell", type="integer", nullable=false)
+     */
+    private $delaisPanell;
+
+
+}

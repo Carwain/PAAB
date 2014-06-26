@@ -1,0 +1,46 @@
+<?php
+
+namespace Ingetis\EntityBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Categories
+ *
+ * @ORM\Table(name="categories", uniqueConstraints={@ORM\UniqueConstraint(name="url_categorie", columns={"url_categorie"})}, indexes={@ORM\Index(name="position", columns={"position"})})
+ * @ORM\Entity
+ */
+class Categories
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_categorie", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idCategorie;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre_categorie", type="string", length=124, nullable=false)
+     */
+    private $titreCategorie;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="url_categorie", type="string", length=124, nullable=false)
+     */
+    private $urlCategorie;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="position", type="integer", nullable=false)
+     */
+    private $position;
+
+
+}

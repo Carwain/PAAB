@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Annonce" table="annonce">
+    <id name="idAnnonce" type="integer" column="id_annonce">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="texteAnnonce" type="text" column="texte_annonce" nullable="false"/>
+    <field name="titrePage" type="text" column="titre_page" nullable="false"/>
+    <field name="textePage" type="text" column="texte_page" nullable="false"/>
+  </entity>
+</doctrine-mapping>

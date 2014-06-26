@@ -1,0 +1,67 @@
+<?php
+
+namespace Ingetis\EntityBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Assoc
+ *
+ * @ORM\Table(name="assoc")
+ * @ORM\Entity
+ */
+class Assoc
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="civ", type="string", nullable=true)
+     */
+    private $civ;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=80, nullable=false)
+     */
+    private $nom = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", length=80, nullable=false)
+     */
+    private $prenom = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="section", type="string", length=100, nullable=false)
+     */
+    private $section = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tel", type="string", length=10, nullable=false)
+     */
+    private $tel = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mail", type="string", length=100, nullable=false)
+     */
+    private $mail = '';
+
+
+}

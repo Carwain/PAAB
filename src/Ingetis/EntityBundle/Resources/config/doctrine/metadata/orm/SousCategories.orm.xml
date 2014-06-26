@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="SousCategories" table="sous_categories">
+    <indexes>
+      <index name="position" columns="position"/>
+    </indexes>
+    <unique-constraints>
+      <unique-constraint name="url_sous_categorie" columns="url_sous_categorie"/>
+    </unique-constraints>
+    <id name="idSousCategorie" type="integer" column="id_sous_categorie">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="titreSousCategorie" type="string" column="titre_sous_categorie" length="124" nullable="false"/>
+    <field name="urlSousCategorie" type="string" column="url_sous_categorie" length="124" nullable="false"/>
+    <field name="position" type="integer" column="position" nullable="false"/>
+  </entity>
+</doctrine-mapping>

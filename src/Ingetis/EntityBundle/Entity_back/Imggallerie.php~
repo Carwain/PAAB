@@ -1,0 +1,39 @@
+<?php
+
+namespace Ingetis\EntityBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Imggallerie
+ *
+ * @ORM\Table(name="imggallerie")
+ * @ORM\Entity
+ */
+class Imggallerie
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="img", type="string", length=100, nullable=false)
+     */
+    private $img = '';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="idGallerie", type="integer", nullable=false)
+     */
+    private $idgallerie = '0';
+
+
+}

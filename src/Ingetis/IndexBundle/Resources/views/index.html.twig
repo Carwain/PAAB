@@ -1,0 +1,21 @@
+{% extends "IngetisContentBundle::content.html.twig" %}
+
+{% block navbar %}
+
+    {{ render(controller("IngetisNavbarBundle:Default:navbar")) }}
+
+{% endblock %}
+{% block colright %}
+
+    {{ render(controller("IngetisCarouselBundle:Default:carousel")) }}
+    {{ render(controller("IngetisNewsBundle:Default:news")) }}
+    {{ render(controller("IngetisOffresBundle:Default:Offres")) }}
+    {{ render(controller("IngetisAnnonceindexBundle:Default:Annonce")) }}
+
+{% endblock %}
+
+{% block colleft %}
+
+    {% include "IngetisColdroiteBundle::coldroite.html.twig" %}
+
+{% endblock %}

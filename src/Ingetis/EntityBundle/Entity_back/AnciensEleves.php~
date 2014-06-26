@@ -1,0 +1,81 @@
+<?php
+
+namespace Ingetis\EntityBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AnciensEleves
+ *
+ * @ORM\Table(name="anciens_eleves", indexes={@ORM\Index(name="titre_actualite", columns={"titre_ancien_eleve"}), @ORM\Index(name="vues_actualite", columns={"vues_ancien_eleve"}), @ORM\Index(name="date_actualite", columns={"date_ancien_eleve"}), @ORM\Index(name="nbr_coms", columns={"nbr_coms"})})
+ * @ORM\Entity
+ */
+class AnciensEleves
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_ancien_eleve", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idAncienEleve;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre_ancien_eleve", type="string", length=250, nullable=true)
+     */
+    private $titreAncienEleve;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="texte_ancien_eleve", type="text", nullable=true)
+     */
+    private $texteAncienEleve;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="vues_ancien_eleve", type="integer", nullable=true)
+     */
+    private $vuesAncienEleve = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="date_ancien_eleve", type="integer", nullable=true)
+     */
+    private $dateAncienEleve = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="photo_ancien_eleve", type="string", length=250, nullable=true)
+     */
+    private $photoAncienEleve;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="nbr_coms", type="integer", nullable=true)
+     */
+    private $nbrComs = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="last_ip_ancien_eleve", type="string", length=250, nullable=false)
+     */
+    private $lastIpAncienEleve;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="last_visit", type="integer", nullable=false)
+     */
+    private $lastVisit;
+
+
+}

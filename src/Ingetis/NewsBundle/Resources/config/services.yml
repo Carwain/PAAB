@@ -1,0 +1,7 @@
+parameters:
+#    ingetis_news.example.class: Ingetis\NewsBundle\Example
+
+services:
+#    ingetis_news.example:
+#        class: %ingetis_news.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

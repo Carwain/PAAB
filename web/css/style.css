@@ -1,0 +1,235 @@
+#content{
+    background: #E3E3E3;
+}
+#content .container{
+    max-width: 990px;
+}
+h1, h2, h4, h5, h6 {
+    font-family: 'Maven Pro', sans-serif; color:#396baf; -webkit-font-smoothing: antialiased; font-style: inherit;
+    font-weight: bold;
+}
+h3{
+    font-family: 'Maven Pro', sans-serif; color:#0d2c4e;
+    font-size: 20px;
+    line-height: 20px;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+p {
+    font-family:Verdana, Arial,sans-serif;
+    font-size:11px;
+    margin:0 auto;
+    padding:0;
+    color:#414141;
+    line-height:20px;
+}
+#header
+{
+    width: 990px;
+    text-align: right;
+}
+
+
+#header h1 {
+    font-size: 23px;
+    line-height: 40px;
+    color: #2354A5;
+}
+#panelhead{
+
+    margin: 0 0 5px;
+    font-size:28px; line-height:30px; padding:3px 5px; color:#FFF; background-color:#396baf
+}
+.panel-heading h2{
+    color: #ffffff;
+    line-height: 0;
+}
+.panel-default{
+    background:#FFF;
+    -moz-box-shadow: 0 0 15px #BBB;
+    -webkit-box-shadow: 0 0 15px #BBB;
+    box-shadow: 0 0 15px #BBB;
+    padding:5px; border-radius:2px; margin-bottom:15px;
+
+}
+.panel-body{
+    padding: 5px 0 0 0;
+}
+.panel-heading{
+    margin: 0 0 5px; font-size: 28px; line-height: 30px; padding: 3px 5px; color: #FFF; background-color: #396baf;
+    max-height: 40px;
+}
+#panelcoldroite{
+    padding: 0 0 0 0;
+}
+#mediacoldroite{
+    border-bottom: none;
+}
+#mediacoldroite h2{
+    text-align: left;
+    margin-top: 0;
+    margin-left: 0;
+}
+#col{
+    padding-left: 10px;
+    padding-right: 0;
+}
+#divmedia{
+    border-bottom: 0;
+}
+.navbar{
+    width:100%;
+    background: #2354A5 url(http://www.ingetis.com/images/site/shadow_line.png) repeat-x top;
+    font-family: Verdana, Arial,sans-serif;
+    font-size: 11px;
+}
+#menu1{
+    max-height: 37px;
+}
+.navbar-toggle p{
+    color: #ffffff;
+}
+#menu p{
+    color: #FFF;
+    position: relative;
+    padding: 0 !important;
+    text-decoration: none;
+    font-weight: normal;;
+    font-size: 15px;
+}
+
+#bs-example-navbar-collapse-1 p{
+
+    color: #ffffff;
+}
+#bs-example-navbar-collapse-1{
+    max-width: 940px;
+}
+#bouton{
+
+    background: none;
+}
+
+#myCarousel{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+div.media{
+    border-bottom:solid 1px #ebebeb;
+    max-width: 600px;
+    height: auto;
+}
+#candidature {
+    padding: 15px 15px;
+    color: #FFF;
+    box-shadow: 1px 1px 6px #555;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    background-color: #2354A5;
+    font-size: 18px;
+    text-align: center;
+}
+#candidature a{
+    color: #ffffff;
+}
+.block{
+    background:#FFF;
+    -moz-box-shadow: 0 0 15px #BBB;
+    -webkit-box-shadow: 0 0 15px #BBB;
+    box-shadow: 0 0 15px #BBB;
+    padding:5px; border-radius:2px; margin-bottom:15px;
+}
+.menu_deco{
+    padding-left: 0;
+}
+.menu_deco,.menu_right{
+    list-style-type:none;
+}
+.menu_deco li{
+    background:url(http://www.ingetis.com/images/site/arrow.png) no-repeat 0 5px;
+    padding: 0 0 8px 16px;
+    margin-bottom:8px;
+    border-bottom:solid 1px #ebebeb;
+    font-family: Verdana, Arial,sans-serif;
+    font-size: 11px;
+}
+.menu_deco a{
+    color: #000000;
+}
+.bouton_index {
+    width: 280px;
+    background-color: #E0E0E0;
+    border-radius: 2px;
+}
+.bouton_index a{
+    color: #0d2c4e;
+
+}
+.bouton_index h2{
+    font-size: 23px;
+    line-height: 28px;
+}
+#footer1{
+    background: #2354A5 url(http://www.ingetis.com/images/site/shadow_line.png) repeat-x top;
+}
+#footer2{
+    width: 990px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+#footer2 h2{
+    font-size: 23px;
+    line-height: 28px;
+    color: #ffffff;
+}
+#footer2 p{
+    color: #ffffff;
+}
+
+#sn ul {
+
+    list-style-type: none;
+    margin: 40px 0 0 0;
+    padding: 0;
+    float: left;
+}
+#sn span{
+    height: 26px;
+    width: 26px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+#footer3{
+    text-align: center;
+    background: #2354A5 url(http://www.ingetis.com/images/site/opacity.png) repeat-x top;
+    padding-top: 20px;
+}
+#footer3 h2{
+
+    font-size: 23px;
+    line-height: 28px;
+    color: #ffffff;
+}
+.latestpost{
+    list-style-type: none;
+    float: left;
+}
+.alignleft, img.alignleft {
+    display: inline;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+.block h2{
+    text-align: right;
+    font-size: 23px;
+    margin-left: 5px;
+}
+#MenuPages li{
+    background: url("http://ingetis.com/images/site/list-style.png") no-repeat left;
+    padding-left: 30px; text-transform:uppercase; margin-bottom: 10px;
+}

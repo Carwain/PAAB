@@ -1,0 +1,53 @@
+<?php
+
+namespace Ingetis\EntityBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Evenements
+ *
+ * @ORM\Table(name="evenements")
+ * @ORM\Entity
+ */
+class Evenements
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre", type="string", length=80, nullable=false)
+     */
+    private $titre = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="photo", type="string", length=80, nullable=false)
+     */
+    private $photo = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="desc", type="text", nullable=false)
+     */
+    private $desc;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date", type="date", nullable=false)
+     */
+    private $date = '0000-00-00';
+
+
+}

@@ -1,0 +1,165 @@
+<?php
+
+namespace Ingetis\EntityBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * DemandeDoc
+ *
+ * @ORM\Table(name="demande_doc")
+ * @ORM\Entity
+ */
+class DemandeDoc
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="civ", type="string", nullable=false)
+     */
+    private $civ = 'mme';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=50, nullable=false)
+     */
+    private $nom = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", length=50, nullable=false)
+     */
+    private $prenom = '';
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="dateNaissance", type="date", nullable=false)
+     */
+    private $datenaissance = '0000-00-00';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adr1", type="string", length=64, nullable=false)
+     */
+    private $adr1 = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adr2", type="string", length=64, nullable=false)
+     */
+    private $adr2 = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="cp", type="string", length=10, nullable=false)
+     */
+    private $cp = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ville", type="string", length=64, nullable=false)
+     */
+    private $ville = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="telFixe", type="string", length=10, nullable=false)
+     */
+    private $telfixe = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="telPortable", type="string", length=10, nullable=false)
+     */
+    private $telportable = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=128, nullable=false)
+     */
+    private $email = '';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="IDNiveau", type="smallint", nullable=false)
+     */
+    private $idniveau = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="niveauValide", type="string", nullable=false)
+     */
+    private $niveauvalide = 'non';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="IDFormation1", type="integer", nullable=false)
+     */
+    private $idformation1 = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tFormation1", type="string", nullable=false)
+     */
+    private $tformation1 = 'initial';
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="aFormation1", type="boolean", nullable=false)
+     */
+    private $aformation1 = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="IDFormation2", type="integer", nullable=false)
+     */
+    private $idformation2 = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tFormation2", type="string", nullable=false)
+     */
+    private $tformation2 = 'initial';
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="aFormation2", type="boolean", nullable=false)
+     */
+    private $aformation2 = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="etablissement", type="string", length=255, nullable=false)
+     */
+    private $etablissement = '';
+
+
+}

@@ -1,0 +1,7 @@
+parameters:
+#    ingetis_carousel.example.class: Ingetis\CarouselBundle\Example
+
+services:
+#    ingetis_carousel.example:
+#        class: %ingetis_carousel.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

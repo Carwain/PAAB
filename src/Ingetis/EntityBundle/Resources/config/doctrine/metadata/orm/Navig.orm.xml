@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Navig" table="navig">
+    <id name="idNav" type="integer" column="id_nav">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="idPage" type="integer" column="id_page" nullable="false"/>
+    <field name="parent" type="integer" column="parent" nullable="false"/>
+    <field name="urlNav" type="text" column="url_nav" nullable="false"/>
+    <field name="titreNav" type="text" column="titre_nav" nullable="false"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,26 @@
+{% extends "IngetisSiteBundle::layout.html.twig" %}
+
+{% block navbar %}
+{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+
+        <div class="col-sm-8">
+
+            {% block colright %}
+            {% endblock %}
+
+        </div>
+
+        <div class="col-sm-4">
+
+            {% block colleft %}
+            {% endblock %}
+
+        </div>
+
+    </div>
+
+{% endblock %}

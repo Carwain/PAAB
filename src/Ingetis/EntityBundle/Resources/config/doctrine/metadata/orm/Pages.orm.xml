@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Pages" table="pages">
+    <indexes>
+      <index name="id_categorie" columns="id_categorie,id_sous_categorie"/>
+      <index name="position" columns="position"/>
+    </indexes>
+    <id name="idPage" type="integer" column="id_page">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="titrePage" type="string" column="titre_page" length="124" nullable="false"/>
+    <field name="titreNav" type="text" column="titre_nav" nullable="false"/>
+    <field name="textePage" type="text" column="texte_page" nullable="false"/>
+    <field name="urlPage" type="string" column="url_page" length="124" nullable="false"/>
+    <field name="vuesPage" type="integer" column="vues_page" nullable="false"/>
+    <field name="lastIp" type="string" column="last_ip" length="124" nullable="false"/>
+    <field name="datePage" type="integer" column="date_page" nullable="false"/>
+    <field name="indexCategorie" type="boolean" column="index_categorie" nullable="false"/>
+    <field name="indexSousCategorie" type="boolean" column="index_sous_categorie" nullable="false"/>
+    <field name="idCategorie" type="integer" column="id_categorie" nullable="false"/>
+    <field name="idSousCategorie" type="integer" column="id_sous_categorie" nullable="false"/>
+    <field name="pageFixe" type="boolean" column="page_fixe" nullable="false"/>
+    <field name="urlPageFixe" type="string" column="url_page_fixe" length="250" nullable="false"/>
+    <field name="link" type="boolean" column="link" nullable="false"/>
+    <field name="idLink" type="integer" column="id_link" nullable="false"/>
+    <field name="lastVisit" type="integer" column="last_visit" nullable="false"/>
+    <field name="position" type="integer" column="position" nullable="false"/>
+  </entity>
+</doctrine-mapping>

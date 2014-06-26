@@ -1,0 +1,52 @@
+ingetis_demande_doc:
+    resource: "@IngetisDemandeDocBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ingetis_coldroite:
+    resource: "@IngetisColdroiteBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ingetis_entity:
+    resource: "@IngetisEntityBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ingetis_divindex:
+    resource: "@IngetisDivindexBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ingetis_annonceindex:
+    resource: "@IngetisAnnonceindexBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ingetis_pages:
+    resource: "@IngetisPagesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ingetis_content:
+    resource: "@IngetisContentBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ingetis_index:
+    resource: "@IngetisIndexBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ingetis_offres:
+    resource: "@IngetisOffresBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ingetis_news:
+    resource: "@IngetisNewsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ingetis_carousel:
+    resource: "@IngetisCarouselBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ingetis_navbar:
+    resource: "@IngetisNavbarBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ingetis_site:
+    resource: "@IngetisSiteBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,7 @@
+parameters:
+#    ingetis_navbar.example.class: Ingetis\NavbarBundle\Example
+
+services:
+#    ingetis_navbar.example:
+#        class: %ingetis_navbar.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

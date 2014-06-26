@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="ImgArticle" table="img_article">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="titre" type="string" column="titre" length="250" nullable="false"/>
+    <field name="img" type="text" column="img" nullable="false"/>
+    <field name="date" type="integer" column="date" nullable="false"/>
+  </entity>
+</doctrine-mapping>

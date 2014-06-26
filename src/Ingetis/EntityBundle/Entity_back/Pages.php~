@@ -1,0 +1,144 @@
+<?php
+
+namespace Ingetis\EntityBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Pages
+ *
+ * @ORM\Table(name="pages", indexes={@ORM\Index(name="id_categorie", columns={"id_categorie", "id_sous_categorie"}), @ORM\Index(name="position", columns={"position"})})
+ * @ORM\Entity
+ */
+class Pages
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_page", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idPage;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre_page", type="string", length=124, nullable=false)
+     */
+    private $titrePage;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre_nav", type="text", nullable=false)
+     */
+    private $titreNav;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="texte_page", type="text", nullable=false)
+     */
+    private $textePage;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="url_page", type="string", length=124, nullable=false)
+     */
+    private $urlPage;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="vues_page", type="integer", nullable=false)
+     */
+    private $vuesPage;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="last_ip", type="string", length=124, nullable=false)
+     */
+    private $lastIp;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="date_page", type="integer", nullable=false)
+     */
+    private $datePage;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="index_categorie", type="boolean", nullable=false)
+     */
+    private $indexCategorie = '0';
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="index_sous_categorie", type="boolean", nullable=false)
+     */
+    private $indexSousCategorie = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_categorie", type="integer", nullable=false)
+     */
+    private $idCategorie;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_sous_categorie", type="integer", nullable=false)
+     */
+    private $idSousCategorie;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="page_fixe", type="boolean", nullable=false)
+     */
+    private $pageFixe = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="url_page_fixe", type="string", length=250, nullable=false)
+     */
+    private $urlPageFixe = '0';
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="link", type="boolean", nullable=false)
+     */
+    private $link;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_link", type="integer", nullable=false)
+     */
+    private $idLink;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="last_visit", type="integer", nullable=false)
+     */
+    private $lastVisit;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="position", type="integer", nullable=false)
+     */
+    private $position;
+
+
+}

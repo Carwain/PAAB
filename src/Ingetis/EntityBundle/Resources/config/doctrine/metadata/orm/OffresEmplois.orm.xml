@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="OffresEmplois" table="offres_emplois">
+    <id name="idOffre" type="integer" column="id_offre">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="titreOffre" type="string" column="titre_offre" length="250" nullable="false"/>
+    <field name="descriptionOffre" type="text" column="description_offre" nullable="false"/>
+    <field name="vues" type="integer" column="vues" nullable="false"/>
+    <field name="date" type="integer" column="date" nullable="false"/>
+  </entity>
+</doctrine-mapping>

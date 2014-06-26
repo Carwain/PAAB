@@ -1,0 +1,3 @@
+ingetis_site_homepage:
+    pattern:  /admin/
+    defaults: { _controller: IngetisSiteBundle:Default:admin }

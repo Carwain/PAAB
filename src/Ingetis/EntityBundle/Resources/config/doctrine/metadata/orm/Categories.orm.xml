@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Categories" table="categories">
+    <indexes>
+      <index name="position" columns="position"/>
+    </indexes>
+    <unique-constraints>
+      <unique-constraint name="url_categorie" columns="url_categorie"/>
+    </unique-constraints>
+    <id name="idCategorie" type="integer" column="id_categorie">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="titreCategorie" type="string" column="titre_categorie" length="124" nullable="false"/>
+    <field name="urlCategorie" type="string" column="url_categorie" length="124" nullable="false"/>
+    <field name="position" type="integer" column="position" nullable="false"/>
+  </entity>
+</doctrine-mapping>

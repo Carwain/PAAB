@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="DivAccueil" table="div_accueil">
+    <id name="idDivAccueil" type="integer" column="id_div_accueil">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="titreDivAccueil" type="text" column="titre_div_accueil" nullable="false"/>
+    <field name="lienDivAccueil" type="text" column="lien_div_accueil" nullable="false"/>
+    <field name="texteDivAccueil" type="text" column="texte_div_accueil" nullable="false"/>
+    <field name="imgDivAccueil" type="text" column="img_div_accueil" nullable="false"/>
+    <field name="dateDivAccueil" type="integer" column="date_div_accueil" nullable="false"/>
+  </entity>
+</doctrine-mapping>

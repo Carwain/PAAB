@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AnciensEleves" table="anciens_eleves">
+    <indexes>
+      <index name="titre_actualite" columns="titre_ancien_eleve"/>
+      <index name="vues_actualite" columns="vues_ancien_eleve"/>
+      <index name="date_actualite" columns="date_ancien_eleve"/>
+      <index name="nbr_coms" columns="nbr_coms"/>
+    </indexes>
+    <id name="idAncienEleve" type="bigint" column="id_ancien_eleve">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="titreAncienEleve" type="string" column="titre_ancien_eleve" length="250" nullable="true"/>
+    <field name="texteAncienEleve" type="text" column="texte_ancien_eleve" nullable="true"/>
+    <field name="vuesAncienEleve" type="integer" column="vues_ancien_eleve" nullable="true"/>
+    <field name="dateAncienEleve" type="integer" column="date_ancien_eleve" nullable="true"/>
+    <field name="photoAncienEleve" type="string" column="photo_ancien_eleve" length="250" nullable="true"/>
+    <field name="nbrComs" type="integer" column="nbr_coms" nullable="true"/>
+    <field name="lastIpAncienEleve" type="string" column="last_ip_ancien_eleve" length="250" nullable="false"/>
+    <field name="lastVisit" type="integer" column="last_visit" nullable="false"/>
+  </entity>
+</doctrine-mapping>

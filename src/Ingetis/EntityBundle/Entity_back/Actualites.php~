@@ -1,0 +1,200 @@
+<?php
+
+namespace Ingetis\EntityBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Actualites
+ *
+ * @ORM\Table(name="actualites", indexes={@ORM\Index(name="id_section", columns={"id_section"}), @ORM\Index(name="id_sous_type", columns={"id_sous_type"}), @ORM\Index(name="id_user_actualite", columns={"id_user_actualite"}), @ORM\Index(name="user_actualite", columns={"user_actualite"}), @ORM\Index(name="titre_actualite", columns={"titre_actualite"}), @ORM\Index(name="vues_actualite", columns={"vues_actualite"}), @ORM\Index(name="date_actualite", columns={"date_actualite"}), @ORM\Index(name="nbr_coms", columns={"nbr_coms"})})
+ * @ORM\Entity
+ */
+class Actualites
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_actualite", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idActualite;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="event", type="boolean", nullable=false)
+     */
+    private $event = '0';
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="id_section", type="boolean", nullable=false)
+     */
+    private $idSection;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_sous_type", type="integer", nullable=false)
+     */
+    private $idSousType = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_user_actualite", type="integer", nullable=false)
+     */
+    private $idUserActualite = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_actualite", type="integer", nullable=false)
+     */
+    private $userActualite = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_topic_forum", type="integer", nullable=false)
+     */
+    private $idTopicForum;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre_actualite", type="string", length=250, nullable=true)
+     */
+    private $titreActualite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="artiste_actualite", type="string", length=150, nullable=false)
+     */
+    private $artisteActualite = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="featuring_actualite", type="string", length=250, nullable=false)
+     */
+    private $featuringActualite = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre_son_actualite", type="string", length=150, nullable=false)
+     */
+    private $titreSonActualite = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="resume_actualite", type="text", nullable=true)
+     */
+    private $resumeActualite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="media_actualite", type="text", nullable=true)
+     */
+    private $mediaActualite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="texte_actualite", type="text", nullable=true)
+     */
+    private $texteActualite;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="vues_actualite", type="integer", nullable=true)
+     */
+    private $vuesActualite = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="date_actualite", type="integer", nullable=true)
+     */
+    private $dateActualite = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="photo_actualite", type="string", length=250, nullable=true)
+     */
+    private $photoActualite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tags", type="text", nullable=false)
+     */
+    private $tags;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="nbr_coms", type="integer", nullable=true)
+     */
+    private $nbrComs = '0';
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="note_actualite", type="float", precision=10, scale=0, nullable=false)
+     */
+    private $noteActualite;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="favori", type="integer", nullable=false)
+     */
+    private $favori = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="dead", type="integer", nullable=false)
+     */
+    private $dead = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="exclu", type="integer", nullable=false)
+     */
+    private $exclu = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="last_id_member_fav", type="integer", nullable=false)
+     */
+    private $lastIdMemberFav = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="last_ip_actualite", type="string", length=250, nullable=false)
+     */
+    private $lastIpActualite;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="last_visit", type="integer", nullable=false)
+     */
+    private $lastVisit;
+
+
+}

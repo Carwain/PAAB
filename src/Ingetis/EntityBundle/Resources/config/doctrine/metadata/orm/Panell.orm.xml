@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Panell" table="panell">
+    <indexes>
+      <index name="event" columns="event"/>
+    </indexes>
+    <id name="idPanell" type="integer" column="id_panell">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="event" type="integer" column="event" nullable="false"/>
+    <field name="idSectionPanell" type="integer" column="id_section_panell" nullable="false"/>
+    <field name="idTypeArticle" type="integer" column="id_type_article" nullable="false"/>
+    <field name="titrePanell" type="string" column="titre_panell" length="300" nullable="false"/>
+    <field name="imagePanell" type="string" column="image_panell" length="300" nullable="false"/>
+    <field name="videoPanell" type="string" column="video_panell" length="250" nullable="false"/>
+    <field name="swfPanell" type="string" column="swf_panell" length="250" nullable="false"/>
+    <field name="lienPanell" type="string" column="lien_panell" length="300" nullable="false"/>
+    <field name="descPanell" type="text" column="desc_panell" nullable="false"/>
+    <field name="delaisPanell" type="integer" column="delais_panell" nullable="false"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,7 @@
+parameters:
+#    ingetis_entity.example.class: Ingetis\EntityBundle\Example
+
+services:
+#    ingetis_entity.example:
+#        class: %ingetis_entity.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

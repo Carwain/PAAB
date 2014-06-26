@@ -1,0 +1,54 @@
+<h2 id="candidature">
+    <a href="#">Déposez votre candidature</a>
+</h2>
+<div class="block">
+    <div class="panel-body" id="panelcoldroite">
+        <ul class="media-list">
+            <div class="media" id="mediacoldroite">
+                <div class="pull-left">
+                    <img alt="" src="http://cdn1.iconfinder.com/data/icons/dellipack/48/people.png" class="img-responsive">
+                </div>
+                <div class="media-body">
+                    <h2>Ingetis si vous êtes</h2>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <ul class="menu_deco">
+        <li><a href="#">Candidat</a></li>
+        <li><a href="#">Étudiant</a></li>
+        <li><a href="#">Entreprise</a></li>
+        <li><a href="#">Enseignant</a></li>
+        <li><a href="#">Ancien élève</a></li>
+    </ul>
+</div>
+<div class="block">
+    <div class="panel-body" id="panelcoldroite">
+        <div class="media-list">
+            <div class="media" id="mediacoldroite">
+                <div class="pull-left">
+                    <img alt="" src="http://cdn1.iconfinder.com/data/icons/customicondesignoffice2/PNG/FAQ.png" class="img-responsive">
+                </div>
+                <div class="media-body">
+                    <a href="http://ingetis.com/23/pourquoi-ingetis"><h2>Les Raisons de choisir Ingetis</h2></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="clear"></div>
+</div>
+{% block pages %}
+    {{ render(controller("IngetisPagesBundle:Default:pages")) }}
+{% endblock %}
+<div class="block" style="text-align:center;">
+    <a href="http://ingetis.com/demande-doc.php">
+        <img src="http://www.ingetis.com/images/site/boutton_etudiants.jpg" alt="Etudiant">
+    </a>
+</div>
+<div class="block" style="text-align:center;">
+    <a href="http://ingetis.com/contact-entreprises.php">
+        <img src="http://itis-formation.com/images/site/boutton_entreprise.jpg" alt="Etudiant" >
+    </a>
+</div>

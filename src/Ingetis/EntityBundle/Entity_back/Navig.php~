@@ -1,0 +1,53 @@
+<?php
+
+namespace Ingetis\EntityBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Navig
+ *
+ * @ORM\Table(name="navig")
+ * @ORM\Entity
+ */
+class Navig
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_nav", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idNav;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_page", type="integer", nullable=false)
+     */
+    private $idPage;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="parent", type="integer", nullable=false)
+     */
+    private $parent;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="url_nav", type="text", nullable=false)
+     */
+    private $urlNav;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre_nav", type="text", nullable=false)
+     */
+    private $titreNav;
+
+
+}

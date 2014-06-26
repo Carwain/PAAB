@@ -1,0 +1,60 @@
+<?php
+
+namespace Ingetis\EntityBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * DivAccueil
+ *
+ * @ORM\Table(name="div_accueil")
+ * @ORM\Entity
+ */
+class DivAccueil
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_div_accueil", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idDivAccueil;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre_div_accueil", type="text", nullable=false)
+     */
+    private $titreDivAccueil;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lien_div_accueil", type="text", nullable=false)
+     */
+    private $lienDivAccueil;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="texte_div_accueil", type="text", nullable=false)
+     */
+    private $texteDivAccueil;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="img_div_accueil", type="text", nullable=false)
+     */
+    private $imgDivAccueil;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="date_div_accueil", type="integer", nullable=false)
+     */
+    private $dateDivAccueil;
+
+
+}

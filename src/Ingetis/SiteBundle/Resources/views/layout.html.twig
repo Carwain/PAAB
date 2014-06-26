@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{% block title %}Ingetis{% endblock %}</title>
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+</head>
+
+<div class="container" id="header">
+    <div class="container container-fixed-top">
+        <div class="row">
+            <div class="col-md-12 hidden-xs hid">
+                <div class="row">
+                    <div class="col-md-1" id="logo">
+                        <img src="http://www.ingetis.com/images/site/logo.png" alt="">
+                    </div><!-- end top-left -->
+                    <div class="col-md-offset-1 col-md-8" id="Titre">
+                        <h1>École d'ingénierie Informatique (Titre RNCP niveau I)</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div><!-- end top-container -->
+</div>
+
+{% block navbar %}{% endblock %}
+
+<div id="content">
+
+    <div class="container">
+
+        {% block body %}{% endblock %}
+
+    </div>
+
+</div>
+
+<div class="footer" id="footer1">
+
+        <div class="container" id="footer2">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <h2>Notre Brochure</h2>
+                    <img src="http://www.ingetis.com/images/site/plaquette-ingetis.jpg">
+
+
+                </div>
+                <div class="col-md-3">
+
+                    <h2>Vous êtes</h2>
+                    <p>Candidat<br>
+                    <p>Étudiant<br>
+                    <p>Entreprise<br>
+                    <p>Enseignant<br>
+                    <p>Ancien élève<br>
+
+                </div>
+                <div class="col-md-offset-1 col-md-4" id="sn">
+
+                    <h2>Contact</h2>
+                    <p>01 60 79 18 81 </p>
+                    <a href="mailto:contact@ingetis.com"><p>contact@ingetis.com</p></a>
+                    <p>128 allée des Champs Elysées <br>
+                        91042 Evry Cedex</p>
+                    <ul class="sn">
+                        <li>
+                            <a href="http://www.twitter.com/ingetis">
+                                <span class="icon-img" style="background-image:url(http://www.ingetis.com/images/site/twitter.png)"></span>
+                            </a>
+                            <a href="http://www.facebook.com/ingetis">
+                                <span class="icon-img" style="background-image:url(http://www.ingetis.com/images/site/facebook.png)"></span>
+                            </a>
+                            <a href="{{ path('ingetis_index_homepage') }}">
+                                <span class="icon-img" style="background-image:url(http://www.ingetis.com/images/site/google.png)"></span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+</div>
+<div class="footer2" id="footer3">
+    <div class="container" id="footer4">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="{{ path('ingetis_index_homepage') }}"><h2>INGETIS.COM</h2></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block javascript %}
+{% endblock %}
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+</html>
+

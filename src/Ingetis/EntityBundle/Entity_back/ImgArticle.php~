@@ -1,0 +1,46 @@
+<?php
+
+namespace Ingetis\EntityBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * ImgArticle
+ *
+ * @ORM\Table(name="img_article")
+ * @ORM\Entity
+ */
+class ImgArticle
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="titre", type="string", length=250, nullable=false)
+     */
+    private $titre;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="img", type="text", nullable=false)
+     */
+    private $img;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="date", type="integer", nullable=false)
+     */
+    private $date = '0';
+
+
+}

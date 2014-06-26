@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Actualites" table="actualites">
+    <indexes>
+      <index name="id_section" columns="id_section"/>
+      <index name="id_sous_type" columns="id_sous_type"/>
+      <index name="id_user_actualite" columns="id_user_actualite"/>
+      <index name="user_actualite" columns="user_actualite"/>
+      <index name="titre_actualite" columns="titre_actualite"/>
+      <index name="vues_actualite" columns="vues_actualite"/>
+      <index name="date_actualite" columns="date_actualite"/>
+      <index name="nbr_coms" columns="nbr_coms"/>
+    </indexes>
+    <id name="idActualite" type="bigint" column="id_actualite">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="event" type="boolean" column="event" nullable="false"/>
+    <field name="idSection" type="boolean" column="id_section" nullable="false"/>
+    <field name="idSousType" type="integer" column="id_sous_type" nullable="false"/>
+    <field name="idUserActualite" type="integer" column="id_user_actualite" nullable="false"/>
+    <field name="userActualite" type="integer" column="user_actualite" nullable="false"/>
+    <field name="idTopicForum" type="integer" column="id_topic_forum" nullable="false"/>
+    <field name="titreActualite" type="string" column="titre_actualite" length="250" nullable="true"/>
+    <field name="artisteActualite" type="string" column="artiste_actualite" length="150" nullable="false"/>
+    <field name="featuringActualite" type="string" column="featuring_actualite" length="250" nullable="false"/>
+    <field name="titreSonActualite" type="string" column="titre_son_actualite" length="150" nullable="false"/>
+    <field name="resumeActualite" type="text" column="resume_actualite" nullable="true"/>
+    <field name="mediaActualite" type="text" column="media_actualite" nullable="true"/>
+    <field name="texteActualite" type="text" column="texte_actualite" nullable="true"/>
+    <field name="vuesActualite" type="integer" column="vues_actualite" nullable="true"/>
+    <field name="dateActualite" type="integer" column="date_actualite" nullable="true"/>
+    <field name="photoActualite" type="string" column="photo_actualite" length="250" nullable="true"/>
+    <field name="tags" type="text" column="tags" nullable="false"/>
+    <field name="nbrComs" type="integer" column="nbr_coms" nullable="true"/>
+    <field name="noteActualite" type="float" column="note_actualite" precision="10" scale="0" nullable="false"/>
+    <field name="favori" type="integer" column="favori" nullable="false"/>
+    <field name="dead" type="integer" column="dead" nullable="false"/>
+    <field name="exclu" type="integer" column="exclu" nullable="false"/>
+    <field name="lastIdMemberFav" type="integer" column="last_id_member_fav" nullable="false"/>
+    <field name="lastIpActualite" type="string" column="last_ip_actualite" length="250" nullable="false"/>
+    <field name="lastVisit" type="integer" column="last_visit" nullable="false"/>
+  </entity>
+</doctrine-mapping>
